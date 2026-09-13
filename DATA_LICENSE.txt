@@ -1,0 +1,19 @@
+Shared Bath Fragment Records, version 2.0.0
+Copyright holder and dedicating party: Iqbalez, 2026.
+
+To the extent possible under law, Iqbalez has waived all copyright and
+related or neighboring rights to the original synthetic records and dataset
+documentation for Shared Bath Fragment Records under the Creative
+Commons CC0 1.0 Universal Public Domain Dedication.
+
+Full terms: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Human-readable summary: https://creativecommons.org/publicdomain/zero/1.0/
+
+This dedication covers the generated records and README.md, MODEL.md,
+CHANGELOG.md and RELEASE.json. The software in generate.py is licensed
+separately under the MIT license in LICENSE. Dependencies retain their own
+licenses and are not bundled. Referenced publications retain their own
+rights; none of their datasets, figures or source code is redistributed.
+
+The records are simulated. No warranty of scientific fitness or accurate
+representation of real archaeological materials is provided.

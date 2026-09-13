@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "dataset": "Shared Bath Fragment Records",
+  "generator": "generate.py",
+  "generator_sha256": "50f5fc232dba7a731f2ba376e6bb32316a85ef8d1b3a882a3603bf054a31a93a",
+  "python": "3.12.10",
+  "dependencies": {
+    "numpy": "2.5.3"
+  },
+  "code_license": "MIT",
+  "data_and_documentation_license": "CC0-1.0",
+  "data_origin": "Original synthetic finite-reservoir passive transport; no third-party records",
+  "record_fields": [
+    "case_id",
+    "feed_history",
+    "initial_concentrations",
+    "bath_volume",
+    "exchange_rate",
+    "bath_final",
+    "diffusivity_assays",
+    "profiles",
+    "fracture_ranks"
+  ],
+  "frozen_creation_key": "Excluded; demonstration key generates independent examples"
+}
