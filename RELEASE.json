@@ -1,8 +1,8 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "dataset": "Shared Bath Fragment Records",
   "generator": "generate.py",
-  "generator_sha256": "50f5fc232dba7a731f2ba376e6bb32316a85ef8d1b3a882a3603bf054a31a93a",
+  "generator_sha256": "0bcb3738a9eb04b5423528903383a0d6b4e5769330854dd118246246d08088c3",
   "python": "3.12.10",
   "dependencies": {
     "numpy": "2.5.3"

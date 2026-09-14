@@ -26,7 +26,7 @@ The six feed knots lie at times 0, 0.2, 0.4, 0.6, 0.8 and 1. Linear interpolatio
 
 Feed knots and the eight initial concentrations are independent Uniform(0.08,0.92) draws. Reservoir volume is Uniform(0.35,1.2), and exchange rate is Uniform(0.3,1.0). These supplied quantities are rounded to six decimals before simulation. Diffusivities are independent Uniform(0.004,0.035) draws. All these draws are independent of the opening-step assignment.
 
-`diffusivity_assays[i] = D_i*exp(e_i)`, with independent normal e_i of mean 0 and standard deviation 0.2, rounded to six decimals. Final profiles sample cell indices `[0,1,2,4,7,10,13,16,19,21,23]`. Independent Gaussian measurement error with standard deviation 0.008 is added to each profile value and to the final bath measurement; values are clipped to [0,1] and rounded to three decimals. Noise settings are declared simulation assumptions, not empirically calibrated instrument specifications.
+`diffusivity_assays[i] = D_i*exp(e_i)`, with independent normal e_i of mean 0 and standard deviation 0.2, rounded to six decimals. Final profiles sample cell indices `[0,1,2,4,7,10,13,16,19,21,23]`. Independent Gaussian measurement error with standard deviation 0.004 is added to each profile value and to the final bath measurement; values are clipped to [0,1] and rounded to three decimals. Noise settings are declared simulation assumptions, not empirically calibrated instrument specifications.
 
 Each record is one independently generated complete reservoir experiment. All eight slabs stay together for splitting, validation and grading. Training and evaluation come from the same stated generative family, using new experiments. The input does not identify a physical museum object or excavation site.
 

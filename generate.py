@@ -2,7 +2,7 @@
 import argparse,hashlib,hmac,json
 from pathlib import Path
 import numpy as np
-VERSION='2.0.0';N=24;STEPS=240
+VERSION='3.0.0';N=24;STEPS=240
 SAMPLE=np.array([0,1,2,4,7,10,13,16,19,21,23])
 def packed(obj):return json.dumps(obj,sort_keys=True,separators=(',',':'),allow_nan=False)
 def feed(knots):return np.interp((np.arange(STEPS)+.5)/STEPS,np.linspace(0,1,6),knots)
@@ -32,7 +32,7 @@ def generate(count,key):
             knots=np.round(rng.uniform(.08,.92,6),6);initial=np.round(rng.uniform(.08,.92,8),6)
             volume=round(float(rng.uniform(.35,1.2)),6);flow=round(float(rng.uniform(.3,1.)),6)
             d=rng.uniform(.004,.035,8);opening=rng.choice(np.arange(1,236),8,replace=False)
-            noise=rng.normal(0,.008,(8,11));bath_noise=float(rng.normal(0,.008));assays=np.round(d*np.exp(rng.normal(0,.2,8)),6)
+            noise=rng.normal(0,.004,(8,11));bath_noise=float(rng.normal(0,.004));assays=np.round(d*np.exp(rng.normal(0,.2,8)),6)
             batch.append((cid,knots,initial,volume,flow,d,opening,noise,bath_noise,assays))
         profiles,bath=forward(np.stack([v[5] for v in batch]),np.stack([v[6] for v in batch]),np.stack([feed(v[1]) for v in batch]),np.stack([v[2] for v in batch]),np.array([v[3] for v in batch]),np.array([v[4] for v in batch]))
         for values,p,b in zip(batch,profiles,bath):

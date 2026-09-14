@@ -1,4 +1,4 @@
-Shared Bath Fragment Records, version 2.0.0
+Shared Bath Fragment Records, version 3.0.0
 Copyright holder and dedicating party: Iqbalez, 2026.
 
 To the extent possible under law, Iqbalez has waived all copyright and

@@ -1,6 +1,6 @@
 # Shared Bath Fragment Records
 
-Original synthetic source, version 2.0.0, for the finite-bath revision of Fracture Exposure Ordering. The source implements eight porous replica half-slabs exchanging a passive tracer with a single finite, replenished bath. Unknown opening events change exchange surfaces and consequently the bath encountered by all other slabs.
+Original synthetic source, version 3.0.0, for the finite-bath revision of Fracture Exposure Ordering. The source implements eight porous replica half-slabs exchanging a passive tracer with a single finite, replenished bath. Unknown opening events change exchange surfaces and consequently the bath encountered by all other slabs.
 
 The supplied feed schedule is not the unknown bath trajectory. Inputs contain final slab profiles and one final bath measurement, known initial slab concentrations, bath volume, inflow/outflow rate and noisy diffusivity assays. The label is the vector of eight chronological opening ranks. Each record is a complete independent experiment; related slabs must remain in one split and grading row.
 
